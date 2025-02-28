@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body class="font-poppins bg-primary">
+    <header>
+      <nav
+        class="bg-secondary container mx-auto my-6 px-6 py-4 rounded-2xl flex justify-between"
+      >
+        <div class="brand flex items-center gap-3">
+          <div class="brand__logo-container w-13">
+            <img
+              class="brand__logo w-full"
+              src="./assets/logo.png"
+              alt="Logo"
+            />
+          </div>
+          <h1
+            class="brand__name text-[#00303C] text-4xl font-light tracking-wider"
+          >
+            Dev<span class="brand__name--bold font-bold">Board</span>
+          </h1>
+        </div>
+        <div class="flex items-center gap-9">
+          <div
+            class="task-completed bg-primary flex items-center gap-3 px-4 py-4 rounded-full"
+          >
+            <div class="task-completed__icon-container w-8">
+              <img
+                class="task-completed__icon w-full aling-middle"
+                src="./assets/checkbox.png"
+                alt="Checkbox"
+              />
+            </div>
+            <p
+              class="task-completed__count text-3xl text-[#1E1E1E] font-bold leading-8 tracking-wider"
+            >
+              23
+            </p>
+          </div>
+          <div
+            class="theme-switcher w-16 bg-primary px-3 py-3 rounded-full align-middle"
+          >
+            <img
+              class="theme-switcher__icon w-full"
+              src="./assets/theme-btn.png"
+              alt="Theme switcher button"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
