@@ -374,11 +374,8 @@
   .my-6 {
     margin-block: calc(var(--spacing) * 6);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
-  .mt-auto {
-    margin-top: auto;
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
@@ -388,6 +385,9 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
   }
   .mb-auto {
     margin-bottom: auto;
@@ -479,15 +479,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
-  }
-  .h-100 {
-    height: calc(var(--spacing) * 100);
-  }
-  .h-full {
-    height: 100%;
-  }
   .h-screen {
     height: 100vh;
   }
@@ -500,11 +491,11 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
@@ -742,18 +733,6 @@
   .grid-flow-row-dense {
     grid-auto-flow: row dense;
   }
-  .auto-rows-\[328px\] {
-    grid-auto-rows: 328px;
-  }
-  .auto-rows-\[340px\] {
-    grid-auto-rows: 340px;
-  }
-  .auto-rows-\[352px\] {
-    grid-auto-rows: 352px;
-  }
-  .auto-rows-\[500px\] {
-    grid-auto-rows: 500px;
-  }
   .auto-rows-auto {
     grid-auto-rows: auto;
   }
@@ -769,9 +748,6 @@
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .grid-cols-\[3fr\,1fr\] {
-    grid-template-columns: 3fr,1fr;
-  }
   .grid-cols-\[3fr_1fr\] {
     grid-template-columns: 3fr 1fr;
   }
@@ -783,30 +759,6 @@
   }
   .grid-cols-subgrid {
     grid-template-columns: subgrid;
-  }
-  .grid-rows-\[316px_316px\] {
-    grid-template-rows: 316px 316px;
-  }
-  .grid-rows-\[repeat\(2\,_316px\)\] {
-    grid-template-rows: repeat(2, 316px);
-  }
-  .grid-rows-\[repeat\(2\,_352px\)\] {
-    grid-template-rows: repeat(2, 352px);
-  }
-  .grid-rows-\[repeat\(2\,_400px\)\] {
-    grid-template-rows: repeat(2, 400px);
-  }
-  .grid-rows-\[repeat\(2\,_500px\)\] {
-    grid-template-rows: repeat(2, 500px);
-  }
-  .grid-rows-\[repeat\(auto-fill\,316px\)\] {
-    grid-template-rows: repeat(auto-fill,316px);
-  }
-  .grid-rows-\[repeat\(auto-fill\,_316px\)\] {
-    grid-template-rows: repeat(auto-fill, 316px);
-  }
-  .grid-rows-\[repeat\(auto-fill\,_500px\)\] {
-    grid-template-rows: repeat(auto-fill, 500px);
   }
   .grid-rows-none {
     grid-template-rows: none;
@@ -960,6 +912,9 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -1406,9 +1361,6 @@
   .object-top {
     object-position: top;
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -1444,6 +1396,12 @@
   }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
@@ -1620,9 +1578,6 @@
   }
   .text-\[\#00303C\] {
     color: #00303C;
-  }
-  .text-black {
-    color: var(--color-black);
   }
   .text-black\/50 {
     color: color-mix(in oklab, var(--color-black) 50%, transparent);
@@ -2073,21 +2028,24 @@
   .transform-view {
     transform-box: view-box;
   }
-  .disabled\:opacity-20 {
-    &:disabled {
-      opacity: 20%;
-    }
-  }
   .disabled\:opacity-25 {
     &:disabled {
       opacity: 25%;
     }
   }
-  .disabled\:opacity-50 {
-    &:disabled {
-      opacity: 50%;
-    }
-  }
+}
+.activity-log__timestamp-card {
+  margin-bottom: calc(var(--spacing) * 7);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary);
+  padding: 10px;
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  --tw-tracking: var(--tracking-wider);
+  letter-spacing: var(--tracking-wider);
+  color: #00303C;
 }
 @property --tw-translate-x {
   syntax: "*";

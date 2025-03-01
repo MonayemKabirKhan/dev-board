@@ -7,3 +7,7 @@
   --color-secondary: #ffffff;
   --color-accent: #3752fd;
 }
+
+.activity-log__timestamp-card {
+  @apply bg-primary text-[#00303C] text-base font-normal tracking-wider p-[10px] rounded-lg mb-7;
+}

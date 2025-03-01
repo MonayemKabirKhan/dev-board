@@ -61,7 +61,7 @@
       </nav>
     </header>
     <main class="container mx-auto">
-      <div class="grid grid-cols-[3fr_1fr] gap-6">
+      <div class="grid grid-cols-[3fr_1fr] gap-6 mb-15">
         <section class="assigned-tasks bg-secondary rounded-2xl">
           <header
             class="assigned-tasks__header-cards grid grid-cols-[auto_auto_auto] gap-6 p-6 border-b-[1px] border-dashed border-[#3752FD33]"
@@ -87,7 +87,7 @@
                 <p
                   class="assignment-tasks__header-card-description text-[#00303C] text-3xl font-bold tracking-wider"
                 >
-                  05
+                  06
                 </p>
               </div>
             </div>
@@ -137,9 +137,7 @@
               </div>
             </div>
           </header>
-          <div
-            class="assigned-tasks__task-cards grid grid-cols-3 auto-rows-[328px] gap-6 p-6"
-          >
+          <div class="assigned-tasks__task-cards grid grid-cols-3 gap-6 p-6">
             <div
               class="assigned-tasks__task-card flex flex-col bg-primary rounded-2xl p-6"
             >
@@ -154,7 +152,7 @@
                 Fix Mobile Button Issue
               </h2>
               <p
-                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mb-3"
+                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mt-3 mb-3"
               >
                 Debug using Chrome DevTools, check for overlapping ...
               </p>
@@ -194,7 +192,7 @@
                 Add Dark Mode
               </h2>
               <p
-                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mb-3"
+                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mt-3 mb-3"
               >
                 Store the user's preference in localStorage, update CSS ...
               </p>
@@ -234,7 +232,7 @@
                 Optimize Home page
               </h2>
               <p
-                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mb-3"
+                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mt-3 mb-3"
               >
                 Debug using Chrome DevTools, check for overlapping ...
               </p>
@@ -274,7 +272,7 @@
                 Add new emoji 🤲
               </h2>
               <p
-                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mb-3"
+                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mt-3 mb-3"
               >
                 Debug using Chrome DevTools, check for overlapping ...
               </p>
@@ -314,7 +312,7 @@
                 Integrate OpenAI API
               </h2>
               <p
-                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mb-3"
+                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mt-3 mb-3"
               >
                 Debug using Chrome DevTools, check for overlapping ...
               </p>
@@ -354,7 +352,7 @@
                 Improve Job searching
               </h2>
               <p
-                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mb-3"
+                class="assigned-tasks__task-card-description bg-secondary text-black/50 p-4 rounded-lg mt-3 mb-3"
               >
                 Debug using Chrome DevTools, check for overlapping ...
               </p>
@@ -382,7 +380,35 @@
             </div>
           </div>
         </section>
-        <section class="activity-log bg-secondary rounded-2xl p-6"></section>
+        <section class="activity-log bg-secondary rounded-2xl">
+          <div
+            class="text-center px-6 pb-4 border-b-[1px] border-dashed pt-6 border-[#3752FD33]"
+          >
+            <header
+              class="activity-log__header inline-flex items-center gap-4 mb-5"
+            >
+              <div class="activity-log__header-image-container w-6">
+                <img
+                  class="activity-log__header-image w-full"
+                  src="./assets/activity.png"
+                  alt="Activity symbol"
+                />
+              </div>
+              <h2
+                class="activity-log__header-title text-[#00303C] text-xl font-medium tracking-wider"
+              >
+                Activity Log
+              </h2>
+            </header>
+            <br />
+            <button
+              class="activity-log__clear-history bg-accent px-5 py-[10px] rounded-lg text-secondary text-base font-medium tracking-wider"
+            >
+              Clear History
+            </button>
+          </div>
+          <div class="p-6"></div>
+        </section>
       </div>
     </main>
     <footer></footer>
