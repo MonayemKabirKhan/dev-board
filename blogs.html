@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+  </head>
+  <body class="font-poppins bg-primary">
+    <header>
+      <nav
+        class="bg-secondary container mx-auto my-6 px-6 py-4 rounded-2xl flex justify-between"
+      >
+        <div class="brand flex items-center gap-3">
+          <div class="brand__logo-container w-13">
+            <img
+              class="brand__logo w-full"
+              src="./assets/logo.png"
+              alt="Logo"
+            />
+          </div>
+          <h1
+            class="brand__name text-[#00303C] text-4xl font-light tracking-wider"
+          >
+            Dev<span class="brand__name--bold font-bold">Board</span>
+          </h1>
+        </div>
+        <button
+          class="nav-button bg-accent px-5 py-[10px] rounded-lg text-secondary text-base font-medium tracking-wider cursor-pointer"
+        >
+          Back to Desk
+        </button>
+      </nav>
+    </header>
+    <main class="container mx-auto mb-15">
+      <h1
+        class="page-title text-[#00303C] text-center text-3xl font-bold tracking-wider mb-6"
+      >
+        Blogs
+      </h1>
+      <div class="blog-card bg-secondary rounded-2xl mb-6">
+        <h2
+          class="blog-card__blog-title text-[#00303C] text-xl font-bold tracking-wider border-b-[1px] border-dashed border-black/25 p-4"
+        >
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h2>
+        <div class="blog-card__blog-description text-lg text-black/70 p-4">
+          There are five ways to select an element in the DOM.
+          <ol class="list-decimal list-outside pl-10">
+            <li>
+              document.getElementById("&ltid&gt"): By using the ID of the
+              element.
+            </li>
+            <li>
+              document.getElementsByTagName("&lttag_name&gt"): By using the tag
+              name of the element (or elements). Returns an HTMLCollection of
+              all the elements of the specified tag name.
+            </li>
+            <li>
+              document.getElementsByClassName("&ltclass_name&gt"): By using the
+              class name of the element (or elements). Returns an HTMLCollection
+              of all the elements of the specified class name.
+            </li>
+            <li>
+              document.querySelector("&ltcss_selector&gt"): By using the CSS
+              selectors. Returns only the first element of the specified
+              selector.
+            </li>
+            <li>
+              document.querySelectorAll("&ltcss_selector&gt"): By using the CSS
+              selectors. Returns a Nodelist of all the elements of the specified
+              selector.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="blog-card bg-secondary rounded-2xl mb-6">
+        <h2
+          class="blog-card__blog-title text-[#00303C] text-xl font-bold tracking-wider border-b-[1px] border-dashed border-black/25 p-4"
+        >
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h2>
+        <div class="blog-card__blog-description text-lg text-black/70 p-4">
+          <ul class="list-disc pl-10">
+            <li>
+              innerHTML: Gets the <strong>HTML content</strong> (markup,
+              elements, and text) inside an element as a string. On setting
+              values, replaces all content inside the element with the specified
+              HTML.
+            </li>
+            <li>
+              textContent: Gets the
+              <strong>full text content</strong> of an element and all its
+              descendants, including text in hidden elements and &ltscript&gt or
+              &ltstyle&gt tags (if present). On setting values, replaces all
+              content (including child elements) inside the element with the
+              specified text.
+            </li>
+            <li>
+              innerText: Gets the
+              <strong>visible text content</strong> of an element and all its
+              descendants. On setting values, behaves the same as textContent.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="blog-card bg-secondary rounded-2xl mb-6">
+        <h2
+          class="blog-card__blog-title text-[#00303C] text-xl font-bold tracking-wider border-b-[1px] border-dashed border-black/25 p-4"
+        >
+          Question-3: What is event delegation in the DOM?
+        </h2>
+        <div class="blog-card__blog-description text-lg text-black/70 p-4">
+          Instead of adding an event listener to each and every similar element,
+          we can add an event listener to their parent element and call an event
+          on a particular target using the .target property of the event object.
+          This process is called event delegation.
+        </div>
+      </div>
+      <div class="blog-card bg-secondary rounded-2xl mb-6">
+        <h2
+          class="blog-card__blog-title text-[#00303C] text-xl font-bold tracking-wider border-b-[1px] border-dashed border-black/25 p-4"
+        >
+          Question-4: What is event bubbling in the DOM?
+        </h2>
+        <div class="blog-card__blog-description text-lg text-black/70 p-4">
+          Event bubbling is the process where an event starts at the target
+          element and propagates upward through its parent elements to the root
+          of the DOM, triggering event handlers on those parent elements unless
+          explicitly stopped.
+        </div>
+      </div>
+      <div class="blog-card bg-secondary rounded-2xl mb-6">
+        <h2
+          class="blog-card__blog-title text-[#00303C] text-xl font-bold tracking-wider border-b-[1px] border-dashed border-black/25 p-4"
+        >
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h2>
+        <div class="blog-card__blog-description text-lg text-black/70 p-4">
+          <ul class="list-disc pl-10">
+            <li>
+              Create elements: <br />
+              document.createElement("&lttag_name&gt");
+            </li>
+            <li>
+              Add elements: <br />
+              parentElement.appendChild(childElement);
+            </li>
+            <li>
+              Remove elements: <br />
+              parentElement.removeChild(childElement);
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="./scripts/blogs.js"></script>
+  </body>
+</html>
